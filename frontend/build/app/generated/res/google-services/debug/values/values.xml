@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">564852415485-b8nda07cl16978c7f7u7p2t3soe3lphk.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">564852415485</string>
+    <string name="google_api_key" translatable="false">AIzaSyCm5FcvpkJZybev_YINBNGEOV1zlhAGJKE</string>
+    <string name="google_app_id" translatable="false">1:564852415485:android:b0c7f256f665a1a4e99794</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCm5FcvpkJZybev_YINBNGEOV1zlhAGJKE</string>
+    <string name="google_storage_bucket" translatable="false">twitter-dev-73185.appspot.com</string>
+    <string name="project_id" translatable="false">twitter-dev-73185</string>
+</resources>
