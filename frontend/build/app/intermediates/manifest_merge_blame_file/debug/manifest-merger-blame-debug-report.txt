@@ -12,8 +12,8 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\SimCoder\Documents\twitter\android\app\src\debug\AndroidManifest.xml:6:5-66
-14-->C:\Users\SimCoder\Documents\twitter\android\app\src\debug\AndroidManifest.xml:6:22-64
+14-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\debug\AndroidManifest.xml:6:22-64
 15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 15-->[com.google.android.gms:play-services-measurement-api:17.6.0] C:\Users\SimCoder\.gradle\caches\transforms-2\files-2.1\19df16574970e66810ae110657a800bb\play-services-measurement-api-17.6.0\AndroidManifest.xml:23:5-79
 15-->[com.google.android.gms:play-services-measurement-api:17.6.0] C:\Users\SimCoder\.gradle\caches\transforms-2\files-2.1\19df16574970e66810ae110657a800bb\play-services-measurement-api-17.6.0\AndroidManifest.xml:23:22-76
@@ -31,30 +31,30 @@
 23         FlutterApplication and put your custom class here.
 24    -->
 25    <application
-25-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:8:5-46:19
+25-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:8:5-46:19
 26        android:name="io.flutter.app.FlutterApplication"
-26-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:9:9-57
+26-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:9:9-57
 27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 27-->[androidx.core:core:1.1.0] C:\Users\SimCoder\.gradle\caches\transforms-2\files-2.1\14a965dc763de25362a05a58d9d10128\core-1.1.0\AndroidManifest.xml:24:18-86
 28        android:debuggable="true"
 29        android:icon="@mipmap/ic_launcher"
-29-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:11:9-43
+29-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:11:9-43
 30        android:label="twitter" >
-30-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:10:9-32
+30-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:10:9-32
 31        <activity
-31-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:12:9-40:20
+31-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:12:9-40:20
 32            android:name="com.example.twitter.MainActivity"
-32-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:13:13-41
+32-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:13:13-41
 33            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-33-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:16:13-163
+33-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:16:13-163
 34            android:hardwareAccelerated="true"
-34-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:17:13-47
+34-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:17:13-47
 35            android:launchMode="singleTop"
-35-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:14:13-43
+35-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:14:13-43
 36            android:theme="@style/LaunchTheme"
-36-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:15:13-47
+36-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:15:13-47
 37            android:windowSoftInputMode="adjustResize" >
-37-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:18:13-55
+37-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:18:13-55
 38
 39            <!--
 40                 Specifies an Android theme to apply to this Activity as soon as
@@ -63,11 +63,11 @@
 43                 to determine the Window background behind the Flutter UI.
 44            -->
 45            <meta-data
-45-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:23:13-26:17
+45-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:23:13-26:17
 46                android:name="io.flutter.embedding.android.NormalTheme"
-46-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:24:15-70
+46-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:24:15-70
 47                android:resource="@style/NormalTheme" />
-47-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:25:15-52
+47-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:25:15-52
 48            <!--
 49                 Displays an Android View that continues showing the launch screen
 50                 Drawable until Flutter paints its first frame, then this splash
@@ -76,21 +76,21 @@
 53                 Flutter's first frame.
 54            -->
 55            <meta-data
-55-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:32:13-35:17
+55-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:32:13-35:17
 56                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-56-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:33:15-79
+56-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:33:15-79
 57                android:resource="@drawable/launch_background" />
-57-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:34:15-61
+57-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:34:15-61
 58
 59            <intent-filter>
-59-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:36:13-39:29
+59-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:36:13-39:29
 60                <action android:name="android.intent.action.MAIN" />
-60-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:37:17-68
-60-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:37:25-66
+60-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:37:17-68
+60-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:37:25-66
 61
 62                <category android:name="android.intent.category.LAUNCHER" />
-62-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:38:17-76
-62-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:38:27-74
+62-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:38:17-76
+62-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:38:27-74
 63            </intent-filter>
 64        </activity>
 65        <!--
@@ -98,32 +98,32 @@
 67             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 68        -->
 69        <meta-data
-69-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:43:9-45:33
+69-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:43:9-45:33
 70            android:name="flutterEmbedding"
-70-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:44:13-44
+70-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:44:13-44
 71            android:value="2" />
-71-->C:\Users\SimCoder\Documents\twitter\android\app\src\main\AndroidManifest.xml:45:13-30
+71-->C:\Users\SimCoder\Desktop\twitterClone\frontend\android\app\src\main\AndroidManifest.xml:45:13-30
 72
 73        <service
-73-->[:firebase_auth] C:\Users\SimCoder\Documents\twitter\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+73-->[:firebase_auth] C:\Users\SimCoder\Desktop\twitterClone\frontend\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 74            android:name="com.google.firebase.components.ComponentDiscoveryService"
-74-->[:firebase_auth] C:\Users\SimCoder\Documents\twitter\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+74-->[:firebase_auth] C:\Users\SimCoder\Desktop\twitterClone\frontend\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
 75            android:directBootAware="true"
 75-->[com.google.firebase:firebase-common:19.3.0] C:\Users\SimCoder\.gradle\caches\transforms-2\files-2.1\4f789d3840d06e7ab739d69e73115e7e\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
 76            android:exported="false" >
 76-->[com.google.firebase:firebase-auth:19.4.0] C:\Users\SimCoder\.gradle\caches\transforms-2\files-2.1\8245ed2a9a5c1c4b5978679fe4b1e472\firebase-auth-19.4.0\AndroidManifest.xml:35:13-37
 77            <meta-data
-77-->[:firebase_auth] C:\Users\SimCoder\Documents\twitter\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+77-->[:firebase_auth] C:\Users\SimCoder\Desktop\twitterClone\frontend\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 78                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-78-->[:firebase_auth] C:\Users\SimCoder\Documents\twitter\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+78-->[:firebase_auth] C:\Users\SimCoder\Desktop\twitterClone\frontend\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
 79                android:value="com.google.firebase.components.ComponentRegistrar" />
-79-->[:firebase_auth] C:\Users\SimCoder\Documents\twitter\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+79-->[:firebase_auth] C:\Users\SimCoder\Desktop\twitterClone\frontend\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 80            <meta-data
-80-->[:firebase_core] C:\Users\SimCoder\Documents\twitter\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+80-->[:firebase_core] C:\Users\SimCoder\Desktop\twitterClone\frontend\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 81                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-81-->[:firebase_core] C:\Users\SimCoder\Documents\twitter\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+81-->[:firebase_core] C:\Users\SimCoder\Desktop\twitterClone\frontend\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
 82                android:value="com.google.firebase.components.ComponentRegistrar" />
-82-->[:firebase_core] C:\Users\SimCoder\Documents\twitter\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+82-->[:firebase_core] C:\Users\SimCoder\Desktop\twitterClone\frontend\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 83            <meta-data
 83-->[com.google.firebase:firebase-auth:19.4.0] C:\Users\SimCoder\.gradle\caches\transforms-2\files-2.1\8245ed2a9a5c1c4b5978679fe4b1e472\firebase-auth-19.4.0\AndroidManifest.xml:36:13-38:85
 84                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"

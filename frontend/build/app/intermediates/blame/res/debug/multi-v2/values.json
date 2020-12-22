@@ -1,8 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\SimCoder\\Documents\\twitter\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\SimCoder\\Desktop\\twitterClone\\frontend\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\SimCoder\\Desktop\\twitterClone\\frontend\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "137,791",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "433,953"
+                    },
+                    "to": {
+                        "startLines": "112,117",
+                        "startColumns": "4,4",
+                        "startOffsets": "8539,8836",
+                        "endLines": "116,119",
+                        "endColumns": "12,12",
+                        "endOffsets": "8831,8996"
+                    }
+                },
                 {
                     "source": "C:\\Users\\SimCoder\\.gradle\\caches\\transforms-2\\files-2.1\\14a965dc763de25362a05a58d9d10128\\core-1.1.0\\res\\values\\values.xml",
                     "from": {
@@ -23,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\SimCoder\\Documents\\twitter\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "source": "C:\\Users\\SimCoder\\Desktop\\twitterClone\\frontend\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",
@@ -54,25 +73,6 @@
                         "startOffsets": "5259,6437",
                         "endColumns": "67,166",
                         "endOffsets": "5322,6599"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\SimCoder\\Documents\\twitter\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "137,791",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "433,953"
-                    },
-                    "to": {
-                        "startLines": "112,117",
-                        "startColumns": "4,4",
-                        "startOffsets": "8539,8836",
-                        "endLines": "116,119",
-                        "endColumns": "12,12",
-                        "endOffsets": "8831,8996"
                     }
                 },
                 {

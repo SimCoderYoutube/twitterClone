@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\SimCoder\\Documents\\twitter\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zu\\values-zu.xml",
+            "outputFile": "C:\\Users\\SimCoder\\Desktop\\twitterClone\\frontend\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zu\\values-zu.xml",
             "map": [
                 {
                     "source": "C:\\Users\\SimCoder\\.gradle\\caches\\transforms-2\\files-2.1\\7b7844e762f33dd7aa3a36031cf01dd7\\play-services-base-17.1.0\\res\\values-zu\\values.xml",
