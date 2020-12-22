@@ -1,7 +1,0 @@
-#Wed Dec 16 15:54:05 GMT 2020
-base.0=C\:\\Users\\SimCoder\\Documents\\twitter\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
-path.1=classes2.dex
-renamed.1=classes2.dex
-path.0=classes.dex
-renamed.0=classes.dex
-base.1=C\:\\Users\\SimCoder\\Documents\\twitter\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes2.dex
