@@ -19,6 +19,11 @@ class Home extends StatelessWidget {
               })
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            Navigator.pushNamed(context, '/add');
+          },
+          child: Icon(Icons.add)),
     );
   }
 }
