@@ -10,20 +10,34 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Home"),
-        actions: <Widget>[
-          FlatButton.icon(
-              label: Text('SignOut'),
-              icon: Icon(Icons.person),
-              onPressed: () async {
-                _authService.signOut();
-              })
-        ],
       ),
       floatingActionButton: FloatingActionButton(
           onPressed: () {
             Navigator.pushNamed(context, '/add');
           },
           child: Icon(Icons.add)),
+      drawer: Drawer(
+        child: ListView(
+          children: <Widget>[
+            DrawerHeader(
+              child: Text('drawer header'),
+              decoration: BoxDecoration(color: Colors.blue),
+            ),
+            ListTile(
+              title: Text('Profile'),
+              onTap: () {
+                Navigator.pushNamed(context, '/profile');
+              },
+            ),
+            ListTile(
+              title: Text('Logout'),
+              onTap: () async {
+                _authService.signOut();
+              },
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
