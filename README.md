@@ -26,12 +26,12 @@ In this series, we use Flutter to quickly deploy the project. We use firebase fo
 
 Currently the project has the following features:
   * flutter boilerplate
-  * Auth system 
-    
+  * Auth system  
+  * post tweets with text
 
 Comming in the future:
   * Redesign
-  * post tweets with image and text
+  * post tweets with image
     * Take pictures directly in app
     * Choose from gallery
   * Profile page
