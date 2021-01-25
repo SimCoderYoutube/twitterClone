@@ -4,6 +4,7 @@ import 'package:twitter/models/user.dart';
 import 'package:twitter/screens/auth/signup.dart';
 import 'package:twitter/screens/main/home.dart';
 import 'package:twitter/screens/main/posts/add.dart';
+import 'package:twitter/screens/main/profile/edit.dart';
 import 'package:twitter/screens/main/profile/profile.dart';
 
 class Wrapper extends StatelessWidget {
@@ -23,7 +24,8 @@ class Wrapper extends StatelessWidget {
     return MaterialApp(initialRoute: '/', routes: {
       '/': (context) => Home(),
       '/add': (context) => Add(),
-      '/profile': (context) => Profile()
+      '/profile': (context) => Profile(),
+      '/edit': (context) => Edit()
     });
   }
 }
