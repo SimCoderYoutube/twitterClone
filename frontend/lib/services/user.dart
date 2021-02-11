@@ -3,11 +3,33 @@ import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:twitter/models/user.dart';
 
 import 'package:twitter/services/utils.dart';
 
 class UserService {
   UtilsService _utilsService = UtilsService();
+
+  UserModel _userFromFirebaseSnapshot(DocumentSnapshot snapshot) {
+    return snapshot != null
+        ? UserModel(
+            id: snapshot.id,
+            name: snapshot.data()['name'],
+            profileImageUrl: snapshot.data()['profileImageUrl'],
+            bannerImageUrl: snapshot.data()['bannerImageUrl'],
+            email: snapshot.data()['email'],
+          )
+        : null;
+  }
+
+  Stream<UserModel> getUserInfo(uid) {
+    return FirebaseFirestore.instance
+        .collection("users")
+        .doc(uid)
+        .snapshots()
+        .map(_userFromFirebaseSnapshot);
+  }
+
   Future<void> updateProfile(
       File _bannerImage, File _profileImage, String name) async {
     String bannerImageUrl = '';
