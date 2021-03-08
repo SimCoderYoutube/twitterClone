@@ -10,14 +10,26 @@ import 'package:twitter/services/utils.dart';
 class UserService {
   UtilsService _utilsService = UtilsService();
 
+  List<UserModel> _userListFromQuerySnapshot(QuerySnapshot snapshot) {
+    return snapshot.docs.map((doc) {
+      return UserModel(
+        id: doc.id,
+        name: doc.data()['name'] ?? '',
+        profileImageUrl: doc.data()['profileImageUrl'] ?? '',
+        bannerImageUrl: doc.data()['bannerImageUrl'] ?? '',
+        email: doc.data()['email'] ?? '',
+      );
+    }).toList();
+  }
+
   UserModel _userFromFirebaseSnapshot(DocumentSnapshot snapshot) {
     return snapshot != null
         ? UserModel(
             id: snapshot.id,
-            name: snapshot.data()['name'],
-            profileImageUrl: snapshot.data()['profileImageUrl'],
-            bannerImageUrl: snapshot.data()['bannerImageUrl'],
-            email: snapshot.data()['email'],
+            name: snapshot.data()['name'] ?? '',
+            profileImageUrl: snapshot.data()['profileImageUrl'] ?? '',
+            bannerImageUrl: snapshot.data()['bannerImageUrl'] ?? '',
+            email: snapshot.data()['email'] ?? '',
           )
         : null;
   }
@@ -28,6 +40,17 @@ class UserService {
         .doc(uid)
         .snapshots()
         .map(_userFromFirebaseSnapshot);
+  }
+
+  Stream<List<UserModel>> queryByName(search) {
+    return FirebaseFirestore.instance
+        .collection("users")
+        .orderBy("name")
+        .startAt([search])
+        .endAt([search + '\uf8ff'])
+        .limit(10)
+        .snapshots()
+        .map(_userListFromQuerySnapshot);
   }
 
   Future<void> updateProfile(
