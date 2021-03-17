@@ -23,6 +23,10 @@ class _ProfileState extends State<Profile> {
     return MultiProvider(
         providers: [
           StreamProvider.value(
+            value: _userService.isFollowing(
+                FirebaseAuth.instance.currentUser.uid, uid),
+          ),
+          StreamProvider.value(
             value: _postService.getPostsByUser(uid),
           ),
           StreamProvider.value(
@@ -65,11 +69,31 @@ class _ProfileState extends State<Profile> {
                                                 .profileImageUrl),
                                       )
                                     : Icon(Icons.person, size: 50),
-                                FlatButton(
-                                    onPressed: () {
-                                      Navigator.pushNamed(context, '/edit');
-                                    },
-                                    child: Text("Edit Profile"))
+                                if (FirebaseAuth.instance.currentUser.uid ==
+                                    uid)
+                                  TextButton(
+                                      onPressed: () {
+                                        Navigator.pushNamed(context, '/edit');
+                                      },
+                                      child: Text("Edit Profile"))
+                                else if (FirebaseAuth
+                                            .instance.currentUser.uid !=
+                                        uid &&
+                                    !Provider.of<bool>(context))
+                                  TextButton(
+                                      onPressed: () {
+                                        _userService.followUser(uid);
+                                      },
+                                      child: Text("Follow"))
+                                else if (FirebaseAuth
+                                            .instance.currentUser.uid !=
+                                        uid &&
+                                    Provider.of<bool>(context))
+                                  TextButton(
+                                      onPressed: () {
+                                        _userService.unfollowUser(uid);
+                                      },
+                                      child: Text("Unfollow")),
                               ]),
                           Align(
                             alignment: Alignment.centerLeft,
