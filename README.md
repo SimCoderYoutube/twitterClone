@@ -28,16 +28,16 @@ Currently the project has the following features:
   * flutter boilerplate
   * Auth system  
   * post tweets with text
+  * Profile page
+  * Follow/Unfollow users
+  * Feed in chronological order
+  * Search Users
 
 Comming in the future:
   * Redesign
   * post tweets with image
     * Take pictures directly in app
     * Choose from gallery
-  * Profile page
-  * Follow/Unfollow users
-  * Feed in chronological order
-  * Search Users
   * retweet
   * tweet Likes
 <br>
