@@ -42,6 +42,17 @@ class UserService {
         .map(_userFromFirebaseSnapshot);
   }
 
+  Future<List<String>> getUserFollowing(uid) async {
+    QuerySnapshot querySnapshot = await FirebaseFirestore.instance
+        .collection('users')
+        .doc(uid)
+        .collection('following')
+        .get();
+
+    final users = querySnapshot.docs.map((doc) => doc.id).toList();
+    return users;
+  }
+
   Stream<List<UserModel>> queryByName(search) {
     return FirebaseFirestore.instance
         .collection("users")
