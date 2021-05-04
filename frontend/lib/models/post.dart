@@ -5,6 +5,8 @@ class PostModel {
   final String creator;
   final String text;
   final Timestamp timestamp;
+  int likesCount;
 
-  PostModel({this.id, this.creator, this.text, this.timestamp});
+  PostModel(
+      {this.id, this.creator, this.text, this.timestamp, this.likesCount});
 }
