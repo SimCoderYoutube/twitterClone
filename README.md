@@ -32,6 +32,7 @@ Currently the project has the following features:
   * Follow/Unfollow users
   * Feed in chronological order
   * Search Users
+  * tweet Likes
 
 Comming in the future:
   * Redesign
@@ -39,7 +40,6 @@ Comming in the future:
     * Take pictures directly in app
     * Choose from gallery
   * retweet
-  * tweet Likes
 <br>
 
 ## 💻 Install
