@@ -41,3 +41,9 @@ app.*.symbols
 app.*.map.json
 /frontend/android/app/google-services.json
 /frontend/build
+/backend/functions/.eslintrc.js
+/backend/functions/package-lock.json
+/backend/.firebaserc
+/backend/.gitignore
+/backend/firebase.json
+/backend/functions/package.json

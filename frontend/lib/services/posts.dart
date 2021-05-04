@@ -14,6 +14,7 @@ class PostService {
         text: doc.data()['text'] ?? '',
         creator: doc.data()['creator'] ?? '',
         timestamp: doc.data()['timestamp'] ?? 0,
+        likesCount: doc.data()['likesCount'] ?? 0,
       );
     }).toList();
   }
@@ -23,6 +24,41 @@ class PostService {
       'text': text,
       'creator': FirebaseAuth.instance.currentUser.uid,
       'timestamp': FieldValue.serverTimestamp()
+    });
+  }
+
+  Future likePost(PostModel post, bool current) async {
+    print(post.id);
+    if (current) {
+      post.likesCount = post.likesCount - 1;
+      await FirebaseFirestore.instance
+          .collection("posts")
+          .doc(post.id)
+          .collection("likes")
+          .doc(FirebaseAuth.instance.currentUser.uid)
+          .delete();
+    }
+    if (!current) {
+      post.likesCount = post.likesCount + 1;
+
+      await FirebaseFirestore.instance
+          .collection("posts")
+          .doc(post.id)
+          .collection("likes")
+          .doc(FirebaseAuth.instance.currentUser.uid)
+          .set({});
+    }
+  }
+
+  Stream<bool> getCurrentUserLike(PostModel post) {
+    return FirebaseFirestore.instance
+        .collection("posts")
+        .doc(post.id)
+        .collection("likes")
+        .doc(FirebaseAuth.instance.currentUser.uid)
+        .snapshots()
+        .map((snapshot) {
+      return snapshot.exists;
     });
   }
 
