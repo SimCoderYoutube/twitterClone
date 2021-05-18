@@ -33,13 +33,14 @@ Currently the project has the following features:
   * Feed in chronological order
   * Search Users
   * tweet Likes
+  * retweet
 
 Comming in the future:
   * Redesign
+  * Replies
   * post tweets with image
     * Take pictures directly in app
     * Choose from gallery
-  * retweet
 <br>
 
 ## 💻 Install
