@@ -18,6 +18,7 @@ class PostService {
         retweetsCount: doc.data()['retweetsCount'] ?? 0,
         retweet: doc.data()['retweet'] ?? false,
         originalId: doc.data()['originalId'] ?? null,
+        ref: doc.reference,
       );
     }).toList();
   }
@@ -33,6 +34,7 @@ class PostService {
             retweetsCount: snapshot.data()['retweetsCount'] ?? 0,
             retweet: snapshot.data()['retweet'] ?? false,
             originalId: snapshot.data()['originalId'] ?? null,
+            ref: snapshot.reference,
           )
         : null;
   }
@@ -41,7 +43,20 @@ class PostService {
     await FirebaseFirestore.instance.collection("posts").add({
       'text': text,
       'creator': FirebaseAuth.instance.currentUser.uid,
-      'timestamp': FieldValue.serverTimestamp()
+      'timestamp': FieldValue.serverTimestamp(),
+      'retweet': false
+    });
+  }
+
+  Future reply(PostModel post, String text) async {
+    if (text == '') {
+      return;
+    }
+    await post.ref.collection("replies").add({
+      'text': text,
+      'creator': FirebaseAuth.instance.currentUser.uid,
+      'timestamp': FieldValue.serverTimestamp(),
+      'retweet': false
     });
   }
 
@@ -147,6 +162,15 @@ class PostService {
         .where('creator', isEqualTo: uid)
         .snapshots()
         .map(_postListFromSnapshot);
+  }
+
+  Future<List<PostModel>> getReplies(PostModel post) async {
+    QuerySnapshot querySnapshot = await post.ref
+        .collection("replies")
+        .orderBy('timestamp', descending: true)
+        .get();
+
+    return _postListFromSnapshot(querySnapshot);
   }
 
   Future<List<PostModel>> getFeed() async {

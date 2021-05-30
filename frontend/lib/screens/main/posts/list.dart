@@ -7,7 +7,8 @@ import 'package:twitter/services/posts.dart';
 import 'package:twitter/services/user.dart';
 
 class ListPosts extends StatefulWidget {
-  ListPosts({Key key}) : super(key: key);
+  PostModel post;
+  ListPosts(this.post, {Key key}) : super(key: key);
 
   @override
   _ListPostsState createState() => _ListPostsState();
@@ -18,8 +19,10 @@ class _ListPostsState extends State<ListPosts> {
   PostService _postService = PostService();
   @override
   Widget build(BuildContext context) {
-    final posts = Provider.of<List<PostModel>>(context) ?? [];
-
+    List<PostModel> posts = Provider.of<List<PostModel>>(context) ?? [];
+    if (widget.post != null) {
+      posts.insert(0, widget.post);
+    }
     return ListView.builder(
       itemCount: posts.length,
       itemBuilder: (context, index) {

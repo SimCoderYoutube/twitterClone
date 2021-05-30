@@ -64,6 +64,16 @@ class _ItemPostState extends State<ItemPost> {
                     Row(
                       children: [
                         IconButton(
+                            icon: new Icon(Icons.chat_bubble_outline,
+                                color: Colors.blue, size: 30.0),
+                            onPressed: () => Navigator.pushNamed(
+                                context, '/replies',
+                                arguments: widget.post)),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        IconButton(
                             icon: new Icon(
                                 widget.snapshotRetweet.data
                                     ? Icons.cancel

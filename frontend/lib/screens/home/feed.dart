@@ -16,7 +16,7 @@ class FeedState extends State<Feed> {
   Widget build(BuildContext context) {
     return FutureProvider.value(
       value: _postService.getFeed(),
-      child: Scaffold(body: ListPosts()),
+      child: Scaffold(body: ListPosts(null)),
     );
   }
 }

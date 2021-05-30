@@ -4,6 +4,7 @@ import 'package:twitter/models/user.dart';
 import 'package:twitter/screens/auth/signup.dart';
 import 'package:twitter/screens/main/home.dart';
 import 'package:twitter/screens/main/posts/add.dart';
+import 'package:twitter/screens/main/posts/replies.dart';
 import 'package:twitter/screens/main/profile/edit.dart';
 import 'package:twitter/screens/main/profile/profile.dart';
 
@@ -25,7 +26,8 @@ class Wrapper extends StatelessWidget {
       '/': (context) => Home(),
       '/add': (context) => Add(),
       '/profile': (context) => Profile(),
-      '/edit': (context) => Edit()
+      '/edit': (context) => Edit(),
+      '/replies': (context) => Replies()
     });
   }
 }
