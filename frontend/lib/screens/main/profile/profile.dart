@@ -114,7 +114,7 @@ class _ProfileState extends State<Profile> {
                   ]))
                 ];
               },
-              body: ListPosts()),
+              body: ListPosts(null)),
         )));
   }
 }

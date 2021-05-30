@@ -7,6 +7,7 @@ class PostModel {
   final Timestamp timestamp;
   final String originalId;
   final bool retweet;
+  DocumentReference ref;
 
   int likesCount;
   int retweetsCount;
@@ -19,5 +20,6 @@ class PostModel {
       this.likesCount,
       this.retweetsCount,
       this.originalId,
-      this.retweet});
+      this.retweet,
+      this.ref});
 }
