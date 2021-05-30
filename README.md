@@ -34,10 +34,10 @@ Currently the project has the following features:
   * Search Users
   * tweet Likes
   * retweet
+  * Replies
 
 Comming in the future:
   * Redesign
-  * Replies
   * post tweets with image
     * Take pictures directly in app
     * Choose from gallery
